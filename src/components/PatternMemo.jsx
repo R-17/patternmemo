@@ -1,6 +1,6 @@
 import React from "react";
 
-class TodoApp extends React.Component {
+class PatternMemo extends React.Component {
   constructor(props) {
     super(props);
     this.state = { items: [], text: '' };
@@ -11,19 +11,18 @@ class TodoApp extends React.Component {
   render() {
     return (
       <div>
-        <h3>TODO</h3>
-        <TodoList items={this.state.items} />
+        <PatternList items={this.state.items} />
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="new-todo">
-            What needs to be done?
+            Your pattern
           </label>
-          <input
+          <textarea
             id="new-todo"
             onChange={this.handleChange}
             value={this.state.text}
           />
           <button>
-            Add #{this.state.items.length + 1}
+            Add
           </button>
         </form>
       </div>
@@ -50,7 +49,7 @@ class TodoApp extends React.Component {
   }
 }
 
-class TodoList extends React.Component {
+class PatternList extends React.Component {
   render() {
     return (
       <ul>
@@ -62,4 +61,4 @@ class TodoList extends React.Component {
   }
 }
 
-export default TodoApp;
+export default PatternMemo;
