@@ -1,6 +1,6 @@
 # PatternMemo
 ## Description
-Web app to store language pattern.
+Web app to store languages pattern.
 ## Dependancies
 - Jest
 ## Installation
