@@ -1,7 +1,8 @@
 # PatternMemo
 ## Description
-Web app to store languages pattern.
+Node.js app to store languages pattern.
 ## Dependancies
+- React
 - Jest
 ## Installation
 `git clone https://github.com/R-17/patternmemo.git`
@@ -11,5 +12,4 @@ Web app to store languages pattern.
 `npm start`
 
 ## Testing
-
 `npm run test -- --coverage`
